@@ -1,0 +1,388 @@
+@font-face {
+    font-family: 'marker';
+    src: url('fonts/PermanentMarker-Regular.ttf');
+}
+html {
+    overflow-x: hidden;
+}
+body {
+    background-image: url('images/bulletjournal.jpeg');
+    background-repeat: repeat;
+    font-family: 'marker';
+    margin: 0;
+    padding: 0;
+    /* Other background properties */
+}
+.navbar {
+    display:none;
+    background-color: transparent !important; /* Set the navbar background to transparent */
+}
+.navbar-brand:hover {
+    color: red;
+}
+.nav-link {
+    color:black;
+}
+.nav-link:hover {
+    color: red;
+}
+.cover {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(245, 245, 220, 0.709);
+    z-index: -1;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    width: 90%;
+    margin-bottom: 50px;
+    padding-left: 20px;
+}
+
+.subnav {
+    display:flex;
+    justify-content: center;
+    gap: 10%;
+}
+
+.subnav > a {
+    color: black;
+    text-decoration: none;
+}
+
+.subnav > a:hover {
+    color: red;
+}
+
+.navigation > a {
+    color: black;
+    text-decoration: none;
+}
+
+.navigation > a:hover {
+    color: red;
+}
+
+.main-name {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+
+}
+
+#main-photo {
+    transform: rotate(-10deg);
+
+}
+
+#first_arrow {
+    transform: rotate(-90deg);
+    max-height: 200px;
+    padding-left: 80px;
+
+}
+
+.main-h1 {
+    font-size: 6rem;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.first-doodles {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#doodle1 {
+    max-height: 100px;
+    padding-left: 8%;
+}
+
+#doodle2 {
+    max-height: 50px;
+    transform: rotate(30deg);
+}
+
+#doodle3 {
+    max-height: 250px;
+    transform: rotate(5deg);
+    padding-right: 10%;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-title {
+    margin-top: 50px;
+    font-size:4rem;
+}
+
+.project-card {
+    height: 350px;
+    padding: 30px;
+
+}
+
+#fear-monger {
+    transform: rotate(-5deg);
+}
+
+#fear-monger:hover {
+    transform: scale(1.02);
+    
+}
+
+#diamond-tree {
+    transform: translateY(50px);
+}
+#diamond-tree:hover {
+    transform: translateY(30px);
+    
+}
+
+#amskier {
+    transform: rotate(10deg);
+}
+#amskier:hover {
+    transform: scale(1.02);
+    
+}
+
+.project-card-holder {
+    display: flex;
+    gap: 100px;
+}
+
+.contact-info {
+    display:flex;
+    justify-content: center;
+    gap:20px; 
+    font-size: 2rem;
+   
+}
+
+.contact-info > a {
+    color: black;
+    text-decoration: none;
+}
+
+.contact-info > a:hover {
+    color: red;
+
+}
+
+.about-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.about-section > p {
+    font-size: 1.5rem;
+    padding: 10px!important;
+}
+
+.about-section > p > a{
+    color: black;
+}
+
+.about-section > p > a:hover{
+    color: red;
+}
+
+.extras-container {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.extra-label {
+    font-size: 4rem;
+    margin-bottom: 30px;
+}
+
+.main-extras {
+    display: flex;
+    gap: 50px;
+    padding: 30px;
+}
+
+.extra-header {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.extras-left > li >a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.5rem;
+
+}
+.extras-left > li >a:hover {
+    color: red;
+}
+
+
+.extras-right > li >a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.5rem;
+    
+}
+.extras-right > li >a:hover {
+    color: red;
+}
+
+.extras-before {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 25px;
+}
+hr {
+    height: 3px; /* Adjust the value to increase or decrease thickness */
+    background-color: #000; /* Optional: Change the color of the line */
+    border: none; /* Remove the default border */
+    z-index: 5;
+  }
+  
+  
+#EJ {
+    color: black; 
+    text-decoration:none; 
+    
+}
+
+#EJ:hover {
+    color: red;
+}
+
+@media screen and (max-width: 1000px) {
+    .project-card-holder {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    #diamond-tree {
+        transform: translateY(0px);
+    }
+    #diamond-tree:hover {
+        transform: rotate(-5deg);
+        
+    }
+}
+
+@media screen and (max-width: 800px){
+    .about-section >p {
+        text-align: center;
+    }
+    .contact-info {
+        font-size: 1.5rem;
+    }
+
+    .main-h1 {
+        font-size: 4rem;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .navigation {
+        display: none;
+    }
+
+    .navbar {
+        display:block;
+    }
+
+    .contact-info {
+        font-size: 1.2rem;
+    }
+    .about-section >p {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 590px){
+    #main-photo {
+        transform: rotate(0deg);
+        width: 300px;
+        height: 300px;
+        margin:auto;
+    }
+
+    #first_arrow {
+        display:none;
+    }
+
+    .main-name {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .main-name-details {
+        text-align:center;
+    }
+
+    .main-name-details >h2 {
+        margin-top: none;
+    }
+    .main-name-details>ul{
+        display:flex;
+        flex-wrap: wrap;
+        gap: 5px;
+        justify-content: center;
+    }
+    .main-name-details >ul >li{
+        list-style: none;
+    }
+
+    .main-h1 {
+        font-size: 3rem;
+        display:none;
+    }
+    .contact-info{
+        gap: 5px;
+        font-size: 1rem;
+    }
+    #doodle2 {
+        display:none;
+    }
+    
+    #doodle3 {
+        max-height: 200px;
+        padding-right: 0;
+    }
+
+    #amskier {
+        transform: rotate(0deg);
+    }
+    #fear-monger {
+        transform: rotate(0deg);
+
+    }
+
+    .extra-header {
+        font-size: 1.5rem;
+    }
+    .extras-left > li >a {
+
+        font-size: 1rem;
+    
+    }
+
+    .extras-right > li >a {
+
+        font-size: 1rem;
+    
+    }
+}
