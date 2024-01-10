@@ -315,8 +315,8 @@ hr {
 @media screen and (max-width: 590px){
     #main-photo {
         transform: rotate(0deg);
-        width: 300px;
-        height: 300px;
+        /* width: 300px; */
+        max-height: 500px;
         margin:auto;
     }
 
